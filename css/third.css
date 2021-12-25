@@ -110,14 +110,11 @@ line-height: 18px;
 
 
 }
-.select{
-    width: 50%;
-    position: fixed;
-}
+
 .second_main{
     display: flex;
-    margin-left: -20px;
-    padding: 10px;
+    margin-left: -10px;
+   
 }
 .padding{
     padding: 20px;
@@ -147,7 +144,7 @@ line-height: 18px;
 }
 
 .all_input{
-        /* width: 100%; */
+       
         padding: 8px 50px 8px 5px;
         border-radius: 8px;
         border: none;
@@ -155,29 +152,44 @@ line-height: 18px;
         color: white;
         width: 100%;
         
+        
 }
 
 
 option{
-    font-size: 6px;
-}
-select{
-    font-size:12px;
-}
-
-
-/* .icon{
-        padding-left: 35px;
-        background-image: url(../Images/email.png);
-        
-       background-repeat: no-repeat;
-}
-.icon2{
-    padding-left: 35px;
-    background-image: url(../Images/plus.png);
     
-   background-repeat: no-repeat;
-} */
+   
+    width: 100px; 
+    height: 20px;
+
+    
+}
+
+select{
+    border: 2px soild red;
+    z-index: 1;
+
+}
+.select_main{
+    width: 197px;
+    overflow: hidden;
+    z-index: 1;
+   
+}
+
+.icon {
+    padding-left: 25px;
+    background: url(../Images/email.png) no-repeat left;
+    background-size: 20px;
+    background-color: #302e2e;
+}
+.icon2 {
+    padding-left: 25px;
+    background: url("../Images/plus.png") no-repeat left;
+    background-size: 20px;
+    background-color: #302e2e;
+}
+
 .middle_para{
     font-size: 10px;
     color: grey;
@@ -245,14 +257,20 @@ select{
 
 
 }
-@media only screen and (max-width: 1024px){
+
+@media only screen and (max-width: 1074px){
     .first_main{
         display: block;
     }
     .second_main{
         display: block;
     }
+    .select_main
+    {
+        width: 100%;
+    }
 }  
+
 
 
 @media only screen and (max-width: 768px){
@@ -344,6 +362,10 @@ border-radius: 8px;
     }
     .base{
         margin-bottom: 20%;
+    }
+    .select_main
+    {
+        width: 100%;
     }
     
     
