@@ -26,7 +26,7 @@ body{
 }
 .container{
 width: 55%;
-height:55%;
+height: 55%;
 padding: 33px;
 background-color: #121212;
 border: 1px solid #1c1c1e;
@@ -43,6 +43,15 @@ line-height: 18px;
 .company_type{
     color: grey;
     font-size: 12px;
+}
+.first_left{
+    display: flex;
+}
+.compmay_result{
+    color: white;
+    font-size: 13px;
+    padding-left: 2px;
+
 }
 .percentage{
     color: grey;
@@ -74,70 +83,73 @@ line-height: 18px;
     color: grey;
 
 }
-.selectors{
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+
+
+.padding{
+    padding: 20px;
 }
-.first_selector{
-    background-color: #1c1c1e;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    margin-top: 20px;
+
+.first_name{
     color: white;
-    font-size: 10px;
-    padding:16px 14px 14px 10px;
-
-
+    padding: 10px;
 }
-.first_selector:hover{
-    background-color: #26262b;
+.first_name h5{
+    margin-bottom:  15px;
+    
+    font-size: 15px;
+    font-weight: 400;
+}
+.first_name p{
+    margin-bottom:  15px;
+    
+    font-size: 15px;
+    font-weight: 400;
+} 
+
+.all_input{
+    margin-top: 5%;
+    /* margin-left: 100%; */
+
+        align-items: center; 
+        padding: 8px 50px 8px 5px;
+        border-radius: 8px;
+        border: none;
+        background-color: #302e2e;
+        color: white;
+        width: 100%;
+        
+        
+}
 
 
-}
-.first_selector p{
-    font-size: 14px;
-    color: grey;
+option{
+    
+   
+    width: 100px; 
+    height: 20px;
 
+    
 }
-.first_selector h1{
-    font-size: 14px;
+
+select{
+    border: 2px soild red;
+    z-index: 1;
+    
 }
-.second_selector{
-    background-color: #1c1c1e;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    height: 100%;
+.select_main{
+    width: 197px;
+    /* overflow: hidden; */
+    z-index: 1;
+    padding: 15px 20px 15px 20px; 
+    font-size: 16px;
+    font-weight: 400;
     width: 100%;
-    justify-content: center;
-    margin-top: 20px;
-    color: white;
-    font-size: 10px;
-    padding:16px 14px 14px 10px;
+    font-family: 'Poppins', sans-serif;
+   
 }
-.second_selector:hover{
-    background-color:#26262b;
-}
-.second_selector p{
-    font-size: 13px;
-    color: grey;
-}
-.second_selector h1{
-    font-size: 14px;
-}
-a{
 
-    text-decoration: none;
-    color: red;
-}
-.link{
-    color: red;
-    font-size: 13px;
-    margin-top:  20px;
-}
+
+
 .buttons{
     display: space-around;
     
@@ -161,7 +173,6 @@ a{
     border: 2px solid black;
     border-radius: 12px;
     color: white;
-    
    
 
 }
@@ -170,6 +181,7 @@ a{
     color: rgb(73, 71, 71);
     line-height: 20px;
     overflow: auto; 
+    text-decoration: none;
 
 
     
@@ -190,6 +202,34 @@ a{
 
 
 }
+.link{
+    color: red;
+    font-size: 13px;
+    margin-top:  20px;
+}
+a{
+
+    text-decoration: none;
+    color: red;
+}
+
+@media only screen and (max-width: 1074px){
+    .first_main{
+        display: block;
+    }
+    .second_main{
+        display: block;
+    }
+    .select_main
+    {
+        width: 100%;
+    }
+    .all_input{
+        margin: 0px;
+    }
+}  
+
+
 
 @media only screen and (max-width: 768px){
     .container{
@@ -197,22 +237,11 @@ a{
         height: auto;
         
     }
-   
-    .selectors{
-        width: 100%;
-        height: 100%;
-       
-    }
     .logo{
         margin: 20px;
     }
+   
     
-    .selectors{
-        padding: 20px;
-        background-color: #121212;
-        border: 1px solid #1c1c1e;
-        border-radius: 8px;
-    }
     .container .company_heading h2{
         
         text-align: left;
@@ -239,7 +268,7 @@ a{
         bottom: 0;
         left: 0;
         right: 0;
-        padding: 46px;
+        padding: 36px;
         background-color: #121212;
         z-index: 3;
 
@@ -259,7 +288,6 @@ a{
         position: fixed;
         bottom: 20px;
         right: 20px;
-        
        
     }
     .next_button button{
@@ -271,11 +299,31 @@ a{
 
     }
     .back_button a{
-        padding: 15px 40px 15px 20px;
+        padding: 21px 40px 18px 20px;
         background-color: #2a2a2c;
         border-radius: 8px;
         color: white;
     
+    }
+    .first_main{
+        display: block;
+    }
+    .second_main{
+        display: block;
+    }
+    .main{
+        padding: 20px;
+background-color: #121212;
+color: inherit;
+border: 1px solid #1c1c1e;
+border-radius: 8px;
+    }
+    .base{
+        margin-bottom: 20%;
+    }
+    .select_main
+    {
+        width: 100%;
     }
     
     
